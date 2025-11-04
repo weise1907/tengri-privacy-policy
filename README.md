@@ -1,1 +1,0 @@
-# tengri-privacy-policy
