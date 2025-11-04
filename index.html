@@ -1,67 +1,175 @@
-# tengri-privacy-policy
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Tengri Bot • Privacy Policy</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Privacy Policy for Tengri Bot" />
+  <style>
+    :root{
+      --bg:#0f1216; --card:#151a21; --muted:#8ea0b4; --text:#e8eef6; --accent:#5fb0ff; --border:#212a35;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial}
+    a{color:var(--accent);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .wrap{max-width:880px;margin:0 auto;padding:48px 20px}
+    header{margin-bottom:28px}
+    h1{font-size:clamp(26px,4vw,36px);margin:0 0 6px}
+    .sub{color:var(--muted);font-size:14px}
+    .card{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:28px}
+    h2{font-size:20px;margin:28px 0 10px;border-top:1px solid var(--border);padding-top:22px}
+    h2:first-of-type{border-top:0;padding-top:0}
+    ul{margin:8px 0 0 22px}
+    .kbd{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;background:#0b0f14;border:1px solid var(--border);border-radius:6px;padding:2px 6px}
+    footer{margin-top:26px;color:var(--muted);font-size:14px}
+    .lang-toggle{display:flex;gap:8px;margin:14px 0 24px}
+    .btn{border:1px solid var(--border);background:transparent;color:var(--text);padding:6px 10px;border-radius:10px;cursor:pointer}
+    .btn[aria-pressed="true"]{background:var(--accent);color:#081318;border-color:var(--accent)}
+    [data-i18n]{display:none}
+    [lang="en"] [data-i18n="en"], [lang="tr"] [data-i18n="tr"]{display:block}
+  </style>
+</head>
+<body lang="en">
+  <div class="wrap">
+    <header>
+      <h1>Privacy Policy for Tengri Bot</h1>
+      <div class="sub">Last Updated: <time datetime="2025-11-04">November 4, 2025</time></div>
 
-Privacy Policy for Tengri Bot
+      <!-- Optional language toggle (EN/TR) -->
+      <div class="lang-toggle" role="group" aria-label="Language">
+        <button class="btn" id="btn-en" aria-pressed="true">English</button>
+        <button class="btn" id="btn-tr" aria-pressed="false">Türkçe</button>
+      </div>
+    </header>
 
-Last Updated: October 2025
+    <main class="card">
+      <!-- EN -->
+      <section data-i18n="en">
+        <h2>1. Data We Collect</h2>
+        <ul>
+          <li><strong>User IDs</strong> — for moderation, registration, and statistics.</li>
+          <li><strong>Message Content</strong> — processed temporarily for moderation (swear/advertisement filters) and command execution.</li>
+          <li><strong>Presence Information</strong> — (online/offline/voice activity) used for activity statistics, meeting tracking, and role systems.</li>
+        </ul>
 
-1. Data We Collect
+        <h2>2. How We Use the Data</h2>
+        <ul>
+          <li>Provide moderation features (ban, mute, jail, filters).</li>
+          <li>Generate statistics (e.g., <span class="kbd">.stat</span>), meeting participation, and activity logs.</li>
+          <li>Improve community safety and server organization.</li>
+        </ul>
 
-Tengri Bot collects only limited data necessary for its core features:
+        <h2>3. Data Storage & Retention</h2>
+        <ul>
+          <li>We do <strong>not</strong> permanently store message content.</li>
+          <li>Minimal data (user IDs, timestamps, activity/XP counters, moderation logs) may be stored securely in a private database.</li>
+          <li>Data is deleted or anonymized when no longer needed, or upon a valid request.</li>
+        </ul>
 
-User IDs — for moderation, registration, and statistics systems.
+        <h2>4. Data Sharing</h2>
+        <ul>
+          <li>We do not sell or share data with third parties. All data remains private to the bot and the Discord servers where it operates.</li>
+        </ul>
 
-Message Content — processed temporarily for moderation (swear and advertisement filters) and command execution.
+        <h2>5. User Rights</h2>
+        <ul>
+          <li><strong>Opt-out:</strong> Users may opt out of activity tracking via server admin request or by leaving the server.</li>
+          <li><strong>Deletion:</strong> Users or server owners can request deletion of stored data related to their account or server.</li>
+          <li><strong>Access:</strong> Users can request details of what data is stored about their account.</li>
+        </ul>
 
-Presence Information — used for activity statistics, meeting tracking, and custom role systems.
+        <h2>6. Security</h2>
+        <p>Data is stored with restricted access and encrypted connections. Operational logs and backups are protected to prevent unauthorized access.</p>
 
-Tengri Bot does not collect or store personal data such as names, emails, or passwords.
+        <h2>7. AI/ML Usage</h2>
+        <p>Message content data is <strong>not</strong> used to train machine learning or AI models.</p>
 
-2. How We Use the Data
+        <h2>8. Contact</h2>
+        <p>For questions or data requests, contact the developer:</p>
+        <ul>
+          <li><strong>Discord Support Link:</strong> https://discord.gg/tengri</li>
+        </ul>
 
-Collected data is used solely to provide bot functionality, including:
+        <h2>9. Changes to This Policy</h2>
+        <p>We may update this policy from time to time. The latest version will always be available on this page.</p>
+      </section>
 
-Server moderation (ban, mute, jail, filters).
+      <!-- TR -->
+      <section data-i18n="tr" aria-hidden="true">
+        <h2>1. Toplanan Veriler</h2>
+        <ul>
+          <li><strong>Kullanıcı ID’leri</strong> — moderasyon, kayıt ve istatistik için.</li>
+          <li><strong>Mesaj İçeriği</strong> — sadece moderasyon (küfür/reklam filtresi) ve komut çalıştırma amacıyla geçici olarak işlenir.</li>
+          <li><strong>Presence Bilgisi</strong> — (çevrimiçi/çevrimdışı/ses aktivitesi) istatistikler, toplantı takibi ve rol sistemleri için kullanılır.</li>
+        </ul>
 
-Leveling and leaderboard systems based on user activity.
+        <h2>2. Verilerin Kullanımı</h2>
+        <ul>
+          <li>Moderasyon özellikleri (ban, mute, jail, filtreler).</li>
+          <li>İstatistik üretimi (<span class="kbd">.stat</span>), toplantı katılımı ve aktivite kayıtları.</li>
+          <li>Topluluk güvenliği ve sunucu düzeninin iyileştirilmesi.</li>
+        </ul>
 
-Temporary storage for ticket, registration, and private room systems.
+        <h2>3. Saklama ve Süre</h2>
+        <ul>
+          <li>Mesaj içerikleri <strong>kalıcı olarak saklanmaz</strong>.</li>
+          <li>Asgari veriler (kullanıcı ID, zaman damgaları, aktivite/XP sayaçları, moderasyon logları) güvenli bir veritabanında saklanabilir.</li>
+          <li>Veriler ihtiyaç kalmadığında veya geçerli talep üzerine silinir/anonimleştirilir.</li>
+        </ul>
 
-Activity tracking for server statistics and community engagement.
+        <h2>4. Veri Paylaşımı</h2>
+        <ul>
+          <li>Veriler üçüncü taraflarla paylaşılmaz veya satılmaz; bot ve çalıştığı Discord sunucuları içinde kalır.</li>
+        </ul>
 
-We do not use your data for advertising, profiling, or AI model training.
+        <h2>5. Kullanıcı Hakları</h2>
+        <ul>
+          <li><strong>Vazgeçme:</strong> Sunucu yöneticisi aracılığıyla takipten çıkma talep edilebilir veya sunucudan ayrılınabilir.</li>
+          <li><strong>Silme:</strong> Kullanıcılar veya sunucu sahipleri, hesap/sunucuyla ilgili verilerin silinmesini talep edebilir.</li>
+          <li><strong>Erişim:</strong> Hangi verilerin tutulduğuna dair bilgi talep edilebilir.</li>
+        </ul>
 
-3. Data Storage & Retention
+        <h2>6. Güvenlik</h2>
+        <p>Veriler kısıtlı erişimle ve şifreli bağlantılarla tutulur; yetkisiz erişimi önlemek için önlemler alınır.</p>
 
-Message content is never permanently stored — it is only processed in real time.
+        <h2>7. Yapay Zeka Kullanımı</h2>
+        <p>Mesaj içerikleri makine öğrenimi veya yapay zekâ model eğitimi için <strong>kullanılmaz</strong>.</p>
 
-Minimal data (user IDs, timestamps, XP counts, moderation logs) may be stored securely in a private database.
+        <h2>8. İletişim</h2>
+        <ul>
+          <li><strong>Discord Destek Sunucusu:</strong> https://discord.gg/tengri</li>
+        </ul>
 
-Data is automatically deleted or anonymized when no longer needed, or upon user request.
+        <h2>9. Politika Değişiklikleri</h2>
+        <p>Bu politika zaman zaman güncellenebilir. En güncel sürüm her zaman bu sayfada yayınlanır.</p>
+      </section>
+    </main>
 
-4. Data Sharing
+    <footer>
+      <p>© <span id="y"></span> Tengri Bot. All rights reserved.</p>
+    </footer>
+  </div>
 
-We do not sell, share, or transfer any data to third parties.
-All collected data stays private between the bot and the Discord servers where it operates.
+  <script>
+    // dynamic year
+    document.getElementById('y').textContent = new Date().getFullYear();
 
-5. User Rights
-
-Opt-out: Users can opt out of activity tracking by leaving the server or requesting the server owner to disable tracking for their account.
-
-Data deletion: Users or server admins can request deletion of all stored data related to their account or server.
-
-Transparency: Users may request details about what data the bot stores related to their account.
-
-6. Security
-
-We take data protection seriously. All stored data is kept in a secure database with limited access, encrypted connections, and routine maintenance to prevent unauthorized access.
-
-7. Contact
-
-If you have questions or would like to request data deletion, please contact the developer:
-
-Discord Support Link: https://discord.gg/tengri 
-
-
-8. Changes to This Policy
-
-We may update this policy from time to time. The latest version will always be publicly available at this page or link provided in the bot’s Discord profile.
+    // simple language toggle
+    const root = document.body;
+    const enBtn = document.getElementById('btn-en');
+    const trBtn = document.getElementById('btn-tr');
+    function setLang(code){
+      root.setAttribute('lang', code);
+      enBtn.setAttribute('aria-pressed', code==='en');
+      trBtn.setAttribute('aria-pressed', code==='tr');
+      document.querySelectorAll('[data-i18n]').forEach(s=>{
+        const show = s.getAttribute('data-i18n')===code;
+        s.toggleAttribute('aria-hidden', !show);
+      });
+    }
+    enBtn.addEventListener('click', ()=>setLang('en'));
+    trBtn.addEventListener('click', ()=>setLang('tr'));
+  </script>
+</body>
+</html>
